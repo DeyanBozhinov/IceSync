@@ -29,7 +29,7 @@ public class WorkflowController : ControllerBase
         if (result.IsSuccessfull) {
             return Ok(_mapper.Map<List<WorkflowOutputModel>>(result.Model));
         }
-        return responseByStatusCode(result.HttpStatusCode);
+        return ResponseByStatusCode(result.HttpStatusCode);
     }
 
     [HttpPost("{id}/run")]
@@ -43,10 +43,10 @@ public class WorkflowController : ControllerBase
         if (result.IsSuccessfull) {
             return Ok();
         }
-        return responseByStatusCode(result.HttpStatusCode);
+        return ResponseByStatusCode(result.HttpStatusCode);
     }
 
-    private IActionResult responseByStatusCode(HttpStatusCode httpStatusCode)
+    private IActionResult ResponseByStatusCode(HttpStatusCode httpStatusCode)
     {
         if (httpStatusCode == HttpStatusCode.Unauthorized) {
             return Unauthorized();
