@@ -1,0 +1,106 @@
+# --- .NET Core Ignore Rules ---
+
+# Visual Studio & Rider IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+out/
+debug/
+release/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Logs, database, and generated files
+*.log
+*.tlog
+*.pdb
+*.mdb
+*.db
+*.bak
+*.cache
+*.config
+*.vsconfig
+*.orig
+appsettings.Development.json
+
+# Entity Framework
+Migrations/
+
+# ASP.NET Core
+wwwroot/lib/
+
+# Publish output
+publish/
+*.publishsettings
+*.pubxml
+*.pfx
+
+# Docker
+**/Dockerfile
+**/docker-compose*.yml
+**/.dockerignore
+
+# JetBrains Rider
+*.DotSettings.user
+
+# ReSharper
+_ReSharper.Caches/
+
+# Others
+Thumbs.db
+Desktop.ini
+
+
+# --- React Ignore Rules ---
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log
+.pnpm-debug.log*
+.pnp/
+.pnp.js
+
+# Build output
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js specific
+.next/
+out/
+
+# Testing
+coverage/
+*.lcov
+
+# Logs
+logs/
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# settings
+appsettings.Development.json
